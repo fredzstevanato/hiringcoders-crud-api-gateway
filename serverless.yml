@@ -34,10 +34,10 @@ functions:
     name: create-lead
     memorySize: 128 # mb
     timeout: 5 # seconds
-    events:g
+    events:
       - http:
           path: lead
-          method: lead
+          method: POST
     iamRoleStatements:
       - Effect: "Allow"
         Action:
